@@ -18,7 +18,7 @@ let addtitle = document.getElementById('title');
     Title : addtitle.value;
     Text : addTxt.value;
 }
-    notesobj.push(addTxt.value);
+    notesobj.push(myobj);
     localStorage.setItem("notes", JSON.stringify(notesobj));
     addTxt.value = "";
     addtitle.value = "";
