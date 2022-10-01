@@ -15,8 +15,8 @@ let addTitle = document.getElementById('addTitle');
         notesobj = JSON.parse(notes);
     }
   let myobj = {
-    title : addTitle.value;
-    text : addTxt.value;
+    title : addTitle.value,
+    text : addTxt.value
 }
     notesobj.push(myobj);
     localStorage.setItem("notes", JSON.stringify(notesobj));
